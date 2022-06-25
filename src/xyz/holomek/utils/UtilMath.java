@@ -69,4 +69,8 @@ public class UtilMath {
         return random(0, max);
     }
 
+    public static boolean isInArea(int x, int y, int x1, int y1, int x2, int y2) {
+        return x <= Math.max(x1, x2) && x >= Math.min(x1, x2) && y >= Math.min(y1, y2) && y <= Math.max(y1, y2);
+    }
+
 }
