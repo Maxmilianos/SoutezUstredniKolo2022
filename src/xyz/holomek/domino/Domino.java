@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Domino {
 
@@ -86,7 +87,12 @@ public class Domino {
     }
 
     public void finish() {
-
+        System.out.println("Snaha o vyreseni..");
+        imagePane.draw = false;
+        ArrayList<Cell> cells = imagePane.cells;
+        while (cells.size() != 0) {
+            
+        }
     }
 
 }

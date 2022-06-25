@@ -10,7 +10,7 @@ public class Test {
     /*
     hlavni metoda volana, zahaji file chooser a pote zavola konstruktor Domino tridy
      */
-    public static void main(String[] args) {/*
+    public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -31,8 +31,8 @@ public class Test {
         if (!selectedFile.getName().endsWith(".bmp")) {
             System.out.println("Nebyl zvolen BMP soubor.");
             return;
-        }*/
-        File selectedFile = new File("C:\\Users\\soutez\\IdeaProjects\\UstredniKolo\\reseni\\priklad01.bmp");
+        }
+       // File selectedFile = new File("C:\\Users\\soutez\\IdeaProjects\\UstredniKolo\\reseni\\priklad01.bmp");
 
         System.out.println("Byl zvolen soubor: " + selectedFile.getName());
         Domino domino = new Domino(selectedFile);

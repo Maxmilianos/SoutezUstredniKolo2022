@@ -19,6 +19,7 @@ public class Cell {
 
     public Cell claimed = null;
 
+    // It's a constructor.
     public Cell(double x, double y, int count, int rowX, int rowY, int up) {
         this.x = x;
         this.y = y;
@@ -40,6 +41,12 @@ public class Cell {
         }
     }
 
+    /**
+     * If the cell is in the same row, then the cell is either above or below the current cell. If the cell is in the same
+     * column, then the cell is either to the left or to the right of the current cell
+     *
+     * @param cell the cell that is being compared to the current cell
+     */
     public void smer(Cell cell) {
         if (cell.rowX == rowX) {
             // ve stejnem sloupci
@@ -62,6 +69,12 @@ public class Cell {
             System.out.println("chyba chyba");
         }
     }
+    /**
+     * > If the cell is in the same row as the current cell, return 1. If the cell is in the same column as the current
+     * cell, return 2. Otherwise, return -1
+     *
+     * @param cell the cell that is being compared to the current cell
+     */
     public int smerCislo(Cell cell) {
         if (cell.rowX == rowX) {
             return 1; // pod nad
